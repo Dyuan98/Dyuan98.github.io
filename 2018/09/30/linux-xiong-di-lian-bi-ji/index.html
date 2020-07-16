@@ -1,0 +1,1448 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="兄弟连linux笔记, Yuan">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>兄弟连linux笔记 | Yuan</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Yuan" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Yuan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Yuan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/Dyuan98/" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/Dyuan98/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">兄弟连linux笔记</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    .toc-fixed .toc-link::before{
+        position: fixed!important;/*当toc的位置改为fixed时，.toc-link::before也要改为fixed*/
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%85%84%E5%BC%9F%E8%BF%9E/">
+                                <span class="chip bg-color">兄弟连</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/linux/" class="post-category">
+                                linux
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2018-09-30
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    9 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="一、各目录及命令的作用"><a href="#一、各目录及命令的作用" class="headerlink" title="一、各目录及命令的作用"></a>一、各目录及命令的作用</h3><p><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200316123415050.png" alt="image-20200316123415050"></p>
+<p><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200316124109224.png" alt="image-20200316124109224"></p>
+<p><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200316124828186.png" alt="image-20200316124828186"></p>
+<p>服务器注意事项：</p>
+<p>远程服务器不允许关机，只能重启</p>
+<p>重启时应该先关闭服务</p>
+<p>不要在服务器访问高峰时运行高负载命令</p>
+<p>远程配置防火墙时不要把自己踢出服务器</p>
+<p>二、命令</p>
+<p><code>mkdir -p</code> 递归创建目录</p>
+<p><code>cp -r</code> 复制目录</p>
+<p><code>cp -p</code> 保留文件属性复制</p>
+<h5 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h5><p><code>cat -n 文件名</code> 显示行号</p>
+<p><code>tac 文件名</code> 倒序显示内容</p>
+<p><code>more 文件名</code> 分页显示内容       <code>space/f</code> 翻页、<code>Enter</code> 换行、<code>q/Q</code> 退出</p>
+<p><code>less 文件名</code>  :top:向上一行  :arrow_down:向下一行、<code>pgup</code> 向上一页 <code>pgdn</code> 向下一页、<code>/+关键词</code> 搜索关键词</p>
+<p><code>head -n 文件名</code> 显示文件前n行</p>
+<p><code>tail -n 文件名</code> 显示文件后n行</p>
+<p><code>tail -f 文件名</code> 动态显示文件末尾内容</p>
+<h5 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h5><p><code>ln -s [原文件] [目标文件]</code>  创建软连接-&gt;箭头指向原文件    无-s为硬链接，与原文件同步更新</p>
+<p><code>可通过ls -i 查询两个文件的i节点，若相同则为硬链接</code> 硬链接不能跨分区，不能针对目录使用</p>
+<h5 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h5><pre><code>chmod [{ugoa}  {+-=}  {rwx}]  [文件或目录]
+      [mode=421] [文件或目录]
+      -R 递归修改</code></pre><table>
+<thead>
+<tr>
+<th align="center">代表字符</th>
+<th align="center">权限</th>
+<th align="center">对文件的含义</th>
+<th align="center">对目录的含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">r</td>
+<td align="center">读权限</td>
+<td align="center">可以查看文件内容</td>
+<td align="center">可以列出目录中的内容</td>
+</tr>
+<tr>
+<td align="center">w</td>
+<td align="center">写权限</td>
+<td align="center">可以修改文件内容</td>
+<td align="center">可以在目录中创建、删除文件</td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center">执行权限</td>
+<td align="center">可以执行文件</td>
+<td align="center">可以进入目录</td>
+</tr>
+</tbody></table>
+<pre><code>chown [用户]  [文件或目录]  改变文件或目录的所有者
+chgrp [用户]  [文件或目录]  改变文件或目录的所属组
+umask [-S] 以rwx显示新建文件缺省权限</code></pre><h5 id="文件搜索"><a href="#文件搜索" class="headerlink" title="文件搜索"></a>文件搜索</h5><pre><code>find [搜索范围] [匹配条件]
+find [搜索范围] -name [文件名]  按名称查找，可以将名称前后加‘*’模糊查询，使用-iname不区分大小写；
+find [搜索范围] -size      [+/-文件大小]   按大小查找，+大于，-小于，不写为等于
+find [搜索范围] -user/group [用户名/所属组]  根据某用户或某所属组下的文件
+find [搜索范围] -cmin/amin/mmin -n 查找n分钟内被修改过属性/访问时间/内容的文件
+find [搜索范围] -name [文件名] -exec/ok 命令 {}\; 对搜索结果执行操作
+find [搜索范围] -inum [文件名] 按i节点查找
+
+快速查找 /usr/bin/locate       updatedb 更新
+locate [文件名]  在文件资料库中查找文件
+locate  -i [文件名] 不区分大小写
+
+which [命令]  文件搜索命令，搜索命令所在目录及别名信息
+whereis [命令]  文件搜索命令，搜索命令所在目录及帮助文档路径
+grep -iv [指定字串] [文件] 在文件中搜寻字串匹配的行并输出，-i不区分大小写，-v排除指定字串</code></pre><h5 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h5><pre><code>man [命令]/[配置文件名]  查看帮助信息   1命令的帮助  5配置的帮助
+whatis [命令]  查看命令简短的介绍信息
+apropos [命令]  查看配置文件简短的介绍信息
+[命令] --help   显示命令常见选项介绍
+help [Shell内置命令]   获取Shell内置命令的帮助信息</code></pre><h5 id="用户管理命令"><a href="#用户管理命令" class="headerlink" title="用户管理命令"></a>用户管理命令</h5><pre><code>useradd 用户名 添加新用户
+who 查看登录用户信息    tty本地终端   pts远程终端
+w 查看登录用户详细信息 </code></pre><h5 id="压缩解压命令"><a href="#压缩解压命令" class="headerlink" title="压缩解压命令"></a>压缩解压命令</h5><pre><code>gzip [文件]   压缩文件为.gz格式   只能压缩文件，不能压缩目录，且不保留原文件
+gunzip [压缩文件]   解压缩为.gz格式的文件
+
+tar 选项[-zcf] [压缩后的文件名] [被压缩目录名]   打包目录； -zcf打包并压缩为 [文件名.tar.gz]
+    -c 打包
+    -v 显示详细信息
+    -f 指定文件名
+    -z 打包同时压缩
+tar -x 解包
+    -v 显示详细信息
+    -f 指定解压文件
+    -z 解压缩
+
+zip 选项[-r] [压缩文件后文件名] [文件或目录]     -r 压缩目录， 源文件保留
+unzip [压缩文件]  解压.zip的压缩文件
+
+bzip2 选项[-k] [文件] -k 产生压缩文件后保留原文件  压缩文件后缀格式为.bz2
+tar 选项[-cjf] [压缩后的文件名] [被压缩目录名]  打包并压缩为.tar.bz2
+bunzip2 -k [压缩文件名]  解压   -k 解压并保留原文件
+tar [-xjf] [压缩文件名.tar.bz2]  解压被压缩的目录</code></pre><h5 id="网络命令"><a href="#网络命令" class="headerlink" title="网络命令"></a>网络命令</h5><pre><code>write &lt;用户名&gt;    给用户发信息，以Ctrl+D保存结束    Ctrl+退格键 ，删除文字，
+wall [message]  发广播信息
+ping 选项  IP地址
+    -c 指定发送次数  测试网络连通性
+
+ifconfig                 查看网卡信息
+ifconfig 网卡名称 IP地址   设置网卡信息
+
+mail [用户名]        查看发送电子邮件
+last                 列出目前与过去登入系统的用户信息
+lastlog                检查某特定用户上次登录的时间
+lastlog -u [uid]
+
+traceroute           显示数据包到主机间的路径
+netstat [选项]       显示网络相关信息
+        -t：tcp协议
+        -u：udp协议
+        -l：监听
+        -r：路由
+        -n：显示IP地址和端口号
+netstat -tlun        查看本机监听的端口
+netstat -an            查看本机所有的网络连接
+netstat -rn            查看本机路由表
+
+setup  配置网络
+
+mount [-t 文件系统] 设备文件名 挂载点
+范例：# mount -t iso9660 /dev/sr0 mnt/cdrom
+挂载：找到这个硬件，给它分配一个文件名，再给它找一个盘符（目录），然后把设备文件名和盘符连接起来
+unmont /dev/sro 卸载</code></pre><h5 id="关机重启命令"><a href="#关机重启命令" class="headerlink" title="关机重启命令"></a>关机重启命令</h5><pre><code>shutdown [选项] 时间
+        -c    取消前一个关机命令
+        -h     关机
+        -r    重启
+其他关机命令：
+    halt
+    poweroff
+    init 0
+其他重启命令：
+    reboot
+    init 6</code></pre><h5 id="系统运行级别"><a href="#系统运行级别" class="headerlink" title="系统运行级别"></a>系统运行级别</h5><pre><code>init 0        关机
+init 1        单用户
+init 2        不完全多用户，不含NFS服务
+init 3        完全多用户
+init 4        未分配
+init 5        图形界面
+init 6        重启
+
+runlevel    查询系统运行级别
+logout        退出登录命令</code></pre><h5 id="Vim常用操作"><a href="#Vim常用操作" class="headerlink" title="Vim常用操作"></a>Vim常用操作</h5><p>定位命令</p>
+<pre><code>:set nu             设置行号
+:set nonu        取消行号
+gg                到第一行
+G                到最后一行
+nG                到第n行
+:n                到第n行
+$                移至行尾
+0                移至行首</code></pre><p>删除命令</p>
+<pre><code>x                删除光标所在处字符
+nx                删除光标所在处后n个字符
+dd                剪切光标所在行，ndd删除n行
+dG                删除光标所在行到文件末尾内容
+D                删除光标所在处到行尾内容
+:n1,n2d            删除指定范围的行</code></pre><p>复制和剪切命令</p>
+<pre><code>yy                 复制当前行
+nyy                复制当前行一下n行
+ndd                剪切当前行一下n行
+p/P                粘贴在当前光标所在行下/行上</code></pre><p>替换和取消命令</p>
+<pre><code>r                取代光标所在处字符
+R                从光标所在处开始替换字符，按Esc结束
+u                取消上一步操作</code></pre><p>搜索和搜索替换</p>
+<pre><code>/string            搜索指定字符串 忽略大小写：set ic
+n                搜索指定字符串的下一个出现位置
+:/%s/old/new/g    全文替换指定字符串
+:n1,n2s/old/new/g    在一定范围内替换指定字符串</code></pre><img src="D:\blog\source\_posts\img\image-20200319150639221.png" alt="image-20200319150639221" style="zoom:80%;">
+
+ <img src="D:\blog\source\_posts\img\image-20200319151139186.png" alt="image-20200319151139186" style="zoom:80%;">
+
+<h3 id="二、软件包管理"><a href="#二、软件包管理" class="headerlink" title="二、软件包管理"></a>二、软件包管理</h3><p>rpm安装</p>
+<p><img src="D:\blog\source\_posts\img\image-20200319203830318.png" alt="image-20200319203830318" style="zoom:80%;"><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200319204357273.png" alt="image-20200319204357273"></p>
+<p><img src="D:\blog\source\_posts\img\image-20200319204423904.png" alt="image-20200319204423904" style="zoom:80%;"><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200319204520945.png" alt="image-20200319204520945"></p>
+<p><img src="D:\blog\source\_posts\img\image-20200319204542497.png" alt="image-20200319204542497" style="zoom:80%;"><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200319204729811.png" alt="image-20200319204729811"><img src="D:\blog\source\_posts\img\image-20200319204542497.png" alt="image-20200319204542497" style="zoom:80%;"><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200319204729811.png" alt="image-20200319204729811"></p>
+<p><img src="D:\blog\source\_posts\img\image-20200319205021348.png" alt="image-20200319205021348" style="zoom:80%;"><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200319205248315.png" alt="image-20200319205248315"></p>
+<p><img src="D:\blog\source\_posts\img\image-20200319205021348.png" alt="image-20200319205021348" style="zoom:80%;"><img src="D:%5Cblog%5Csource_posts%5Cimg%5Cimage-20200319205248315.png" alt="image-20200319205248315"></p>
+<img src="D:\blog\source\_posts\img\image-20200319205648887.png" alt="image-20200319205648887" style="zoom:80%;">
+
+<img src="D:\blog\source\_posts\img\image-20200319205837999.png" alt="image-20200319205837999" style="zoom:80%;">
+
+<h5 id="网络yum源"><a href="#网络yum源" class="headerlink" title="网络yum源"></a>网络yum源</h5><img src="D:\blog\source\_posts\img\image-20200321110610375.png" alt="image-20200321110610375" style="zoom:80%;">
+
+<h5 id="常用的yum命令"><a href="#常用的yum命令" class="headerlink" title="常用的yum命令"></a>常用的yum命令</h5><pre><code>yum list        查询所有可用软件包列表
+yum search        搜索服务器上所有和关键字相关的包
+yum -y install [包名]            -y 自动回答yes 下载
+yum -y update [包名]            升级，切记带上包名，否则会更新所有的包，包括linux内核，内核更新需要重新配置，远程会断开连接，切记不要远程使用；
+yum -y remove [包名]            卸载，不推荐使用，会先卸载依赖包，有可能此包的依赖包同时被linux内核依赖。</code></pre><h5 id="yum软件组管理命令"><a href="#yum软件组管理命令" class="headerlink" title="yum软件组管理命令"></a>yum软件组管理命令</h5><pre><code>yum grouplist             列出所有可用的软件组列表
+yum groupinstall [软件组名]        安装指定软件组，组名可以由grouplist查询出来
+yum    groupremove     [软件组名]        卸载指定软件组名</code></pre><h5 id="光盘yum源搭建步骤"><a href="#光盘yum源搭建步骤" class="headerlink" title="光盘yum源搭建步骤"></a>光盘yum源搭建步骤</h5><pre><code>mount /dev/cdrom  /mnt/cdrom            挂载光盘
+让网络yum源文件失效
+cd /etc/yum.repos.d
+mv CentOS-Base.repo \ CentOS-Base.repo.bak
+mv CentOS-Debudinfo.repo \ CentOS-Debuginfo.repo.bak
+mv CentOS-Vault.repo \ CentOS-Vault.repo.bak</code></pre><img src="D:\blog\source\_posts\img\image-20200321145806607.png" alt="image-20200321145806607" style="zoom:80%;">
+
+<h3 id="三、用户和用户组管理"><a href="#三、用户和用户组管理" class="headerlink" title="三、用户和用户组管理"></a>三、用户和用户组管理</h3><h5 id="用户配置文件"><a href="#用户配置文件" class="headerlink" title="用户配置文件"></a>用户配置文件</h5><p><u>/<strong>etc/passwd</strong></u></p>
+<ol>
+<li>第一个字段：用户名</li>
+<li>第二个字段：密码标志</li>
+<li>第三个字段：UID（用户ID）<ul>
+<li>0：超级用户</li>
+<li>1-499：系统用户（伪用户）</li>
+<li>500-65535：普通用户</li>
+</ul>
+</li>
+<li>第四个字段：GID（用户初始组ID）</li>
+<li>第五个字段：用户说明</li>
+<li>第六个字段：家目录<ul>
+<li>普通用户：/home/用户名/</li>
+<li>超级用户：/root/</li>
+</ul>
+</li>
+<li>登陆之后的shell<ul>
+<li>shell就是Linux的命令解释器</li>
+<li>zai/etc/passwd中，除了标准shell是/bin/bash/之外，还可以写如/sbin/nologin</li>
+</ul>
+</li>
+</ol>
+<p><strong>影子文件</strong>：<code>/etc/shadow</code></p>
+<ol>
+<li>第一个字段：用户名</li>
+<li>第二个字段：加密密码<ul>
+<li>加密算法升级为SHA512散列加密算法</li>
+<li>密码位是“！！”或“*”代表没有密码，不能登录</li>
+</ul>
+</li>
+<li>第三个字段：密码最后修改日期：<em>以时间戳表示（天为单位）</em></li>
+<li>两次密码的修改时间间隔，与第三个字段相比</li>
+<li>密码有效期，与第三个字段相比</li>
+<li>密码修改到期前的警告天数，与第5个字段相比</li>
+<li>密码过期后的宽限天数，与第5个字段相比<ul>
+<li>0：代表密码过期后立即失效</li>
+<li>-1：代表密码永远不会失效</li>
+</ul>
+</li>
+<li>账号失效时间，<em>时间戳表示</em></li>
+<li>保留</li>
+</ol>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yoursite.com" rel="external nofollow noreferrer">yuan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yoursite.com/2018/09/30/linux-xiong-di-lian-bi-ji/">http://yoursite.com/2018/09/30/linux-xiong-di-lian-bi-ji/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="http://yoursite.com" target="_blank">yuan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%85%84%E5%BC%9F%E8%BF%9E/">
+                                    <span class="chip bg-color">兄弟连</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2019/12/03/shi-yong-hexo-kuang-jia-da-jian-ge-ren-bo-ke/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用hexo框架搭建个人博客">
+                        
+                        <span class="card-title">使用hexo框架搭建个人博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            我不知将去何方，但我已经在路上。
+宫崎骏《千与千寻》
+
+一、安装node.js
+在官网：https://nodejs.org/en/ 下载对应的版本
+以管理员身份打开cmd
+node -v 查看版本
+npm -v 查看版本（包管理器）
+使用
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2018/09/12/mybatis/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mybaits学习笔记">
+                        
+                        <span class="card-title">mybaits学习笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            mybatis框架学习笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                    编程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A1%86%E6%9E%B6/">
+                        <span class="chip bg-color">框架</span>
+                    </a>
+                    
+                    <a href="/tags/mybatis/">
+                        <span class="chip bg-color">mybatis</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="http://yoursite.com" target="_blank">yuan</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "4";
+                    var startDate = "27";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Dyuan98/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2967753215@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2967753215" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2967753215" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "4cfe2a6c"
+        });
+        daovoice('update');
+    </script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

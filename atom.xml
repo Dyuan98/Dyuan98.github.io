@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yuan</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-07-06T15:15:19.158Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>yuan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringCloud学习笔记</title>
+    <link href="http://yoursite.com/2020/07/06/springcloud/"/>
+    <id>http://yoursite.com/2020/07/06/springcloud/</id>
+    <published>2020-07-06T14:11:12.000Z</published>
+    <updated>2020-07-06T15:15:19.158Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;微服务&quot;&gt;&lt;a href=&quot;#微服务&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot学习笔记</title>
+    <link href="http://yoursite.com/2020/07/05/springboot/"/>
+    <id>http://yoursite.com/2020/07/05/springboot/</id>
+    <published>2020-07-05T12:15:21.000Z</published>
+    <updated>2020-07-16T11:32:59.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;SpringBoot实现邮件任务&quot;&gt;&lt;a href=&quot;#SpringBoot实现邮件任务&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>swagger学习笔记</title>
+    <link href="http://yoursite.com/2020/07/05/swagger-xue-xi-bi-ji/"/>
+    <id>http://yoursite.com/2020/07/05/swagger-xue-xi-bi-ji/</id>
+    <published>2020-07-05T07:25:30.000Z</published>
+    <updated>2020-07-05T12:11:05.712Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Swagger介绍&quot;&gt;&lt;a href=&quot;#Swagger介绍&quot; class=&quot;headerlink&quot; title=&quot;Swagger介绍&quot;&gt;&lt;/a&gt;Swagger介绍&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Swagger
+        
+      
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://yoursite.com/categories/java/"/>
+    
+    
+      <category term="swagger" scheme="http://yoursite.com/tags/swagger/"/>
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GOF23设计方式</title>
+    <link href="http://yoursite.com/2020/05/26/gof23-she-ji-fang-shi/"/>
+    <id>http://yoursite.com/2020/05/26/gof23-she-ji-fang-shi/</id>
+    <published>2020-05-26T01:50:29.099Z</published>
+    <updated>2020-07-16T06:27:23.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;GOF23&quot;&gt;&lt;a href=&quot;#GOF23&quot; class=&quot;headerlink&quot; title=&quot;GOF23&quot;&gt;&lt;/a&gt;GOF23&lt;/h3&gt;&lt;h5 id=&quot;创建型模式：&quot;&gt;&lt;a href=&quot;#创建型模式：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java设计模式" scheme="http://yoursite.com/tags/java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax学习笔记</title>
+    <link href="http://yoursite.com/2020/05/09/ajax-xue-xi/"/>
+    <id>http://yoursite.com/2020/05/09/ajax-xue-xi/</id>
+    <published>2020-05-09T07:49:27.784Z</published>
+    <updated>2020-05-09T08:23:13.871Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;AJAX&quot;&gt;&lt;a href=&quot;#AJAX&quot; class=&quot;headerlink&quot; title=&quot;AJAX&quot;&gt;&lt;/a&gt;&lt;strong&gt;AJAX&lt;/strong&gt;&lt;/h1&gt;&lt;h3 id=&quot;ajax概念&quot;&gt;&lt;a href=&quot;#ajax概念&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="ajax" scheme="http://yoursite.com/tags/ajax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>idea中maven更换阿里源错误问题</title>
+    <link href="http://yoursite.com/2020/05/06/jiu-cuo-jin-ji/"/>
+    <id>http://yoursite.com/2020/05/06/jiu-cuo-jin-ji/</id>
+    <published>2020-05-06T13:50:25.122Z</published>
+    <updated>2020-05-26T01:50:02.425Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;maven&quot;&gt;&lt;a href=&quot;#maven&quot; class=&quot;headerlink&quot; title=&quot;maven&quot;&gt;&lt;/a&gt;maven&lt;/h3&gt;&lt;h5 id=&quot;m1&quot;&gt;&lt;a href=&quot;#m1&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="纠错" scheme="http://yoursite.com/tags/%E7%BA%A0%E9%94%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JVM学习笔记</title>
+    <link href="http://yoursite.com/2020/05/06/jvm-xue-xi-bi-ji/"/>
+    <id>http://yoursite.com/2020/05/06/jvm-xue-xi-bi-ji/</id>
+    <published>2020-05-06T01:26:14.139Z</published>
+    <updated>2020-07-09T00:58:30.622Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1、jvm的位置&quot;&gt;&lt;a href=&quot;#1、jvm的位置&quot; class=&quot;headerlink&quot; title=&quot;1、jvm的位置&quot;&gt;&lt;/a&gt;1、jvm的位置&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/img/image-20200506095428484.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="JVM" scheme="http://yoursite.com/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpingMVC学习笔记</title>
+    <link href="http://yoursite.com/2020/05/05/springmvc-xue-xi-bi-ji/"/>
+    <id>http://yoursite.com/2020/05/05/springmvc-xue-xi-bi-ji/</id>
+    <published>2020-05-05T03:03:09.235Z</published>
+    <updated>2020-07-16T11:31:04.730Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java设计模式</title>
+    <link href="http://yoursite.com/2020/05/02/java-she-ji-mo-shi/"/>
+    <id>http://yoursite.com/2020/05/02/java-she-ji-mo-shi/</id>
+    <published>2020-05-02T14:38:07.821Z</published>
+    <updated>2020-05-02T14:38:07.821Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;动态代理&quot;&gt;&lt;a href=&quot;#动态代理&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring入门笔记</title>
+    <link href="http://yoursite.com/2020/05/02/spring-ru-men/"/>
+    <id>http://yoursite.com/2020/05/02/spring-ru-men/</id>
+    <published>2020-05-02T02:25:05.559Z</published>
+    <updated>2020-05-04T03:09:38.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;spring对bean的管理细节&quot;&gt;&lt;a href=&quot;#spring对bean的管理细节&quot; class=&quot;headerlink&quot; title=&quot;spring对bean的管理细节&quot;&gt;&lt;/a&gt;spring对bean的管理细节&lt;/h3&gt;&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/04/27/hello-world/"/>
+    <id>http://yoursite.com/2020/04/27/hello-world/</id>
+    <published>2020-04-27T02:47:35.949Z</published>
+    <updated>2020-04-27T13:37:24.314Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="TheWorld" scheme="http://yoursite.com/categories/TheWorld/"/>
+    
+    
+      <category term="hello world" scheme="http://yoursite.com/tags/hello-world/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库三级部分题型笔记</title>
+    <link href="http://yoursite.com/2020/03/11/shu-ju-ku-san-ji-ti-xing/"/>
+    <id>http://yoursite.com/2020/03/11/shu-ju-ku-san-ji-ti-xing/</id>
+    <published>2020-03-11T03:32:27.000Z</published>
+    <updated>2020-04-27T12:13:42.415Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一部分：数据库创建&quot;&gt;&lt;a href=&quot;#第一部分：数据库创建&quot; class=&quot;headerlink&quot; title=&quot;第一部分：数据库创建&quot;&gt;&lt;/a&gt;第一部分：数据库创建&lt;/h3&gt;&lt;h5 id=&quot;1-1-数据库的创建与维护&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="sql" scheme="http://yoursite.com/tags/sql/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="习题笔记" scheme="http://yoursite.com/tags/%E4%B9%A0%E9%A2%98%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三级数据库部分笔记</title>
+    <link href="http://yoursite.com/2020/03/05/san-ji-shu-ju-ku-xi-ti-bi-ji/"/>
+    <id>http://yoursite.com/2020/03/05/san-ji-shu-ju-ku-xi-ti-bi-ji/</id>
+    <published>2020-03-05T03:32:27.000Z</published>
+    <updated>2020-04-27T12:13:29.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;三级数据库习题笔记&quot;&gt;&lt;a href=&quot;#三级数据库习题笔记&quot; class=&quot;headerlink&quot; title=&quot;三级数据库习题笔记&quot;&gt;&lt;/a&gt;三级数据库习题笔记&lt;/h1&gt;&lt;h5 id=&quot;1-关系模型相关&quot;&gt;&lt;a href=&quot;#1-关系模型相关&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="sql" scheme="http://yoursite.com/tags/sql/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo部署到云服务器</title>
+    <link href="http://yoursite.com/2020/03/01/a-li-yun-hexo-da-jian-wang-zhan/"/>
+    <id>http://yoursite.com/2020/03/01/a-li-yun-hexo-da-jian-wang-zhan/</id>
+    <published>2020-03-01T03:32:27.000Z</published>
+    <updated>2020-04-28T04:28:16.971Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;转载自 ：&lt;a href=&quot;https://www.jianshu.com/p/70bf58c48010&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;一、环境安装&quot;&gt;&lt;a href=&quot;#一、环境安装&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="centos" scheme="http://yoursite.com/tags/centos/"/>
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java笔记</title>
+    <link href="http://yoursite.com/2019/12/23/java-mian-shi/"/>
+    <id>http://yoursite.com/2019/12/23/java-mian-shi/</id>
+    <published>2019-12-23T14:42:27.000Z</published>
+    <updated>2020-07-16T11:32:43.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;第一部分，公开课笔记&quot;&gt;&lt;a href=&quot;#第一部分，公开课笔记&quot; class=&quot;headerlink&quot; title=&quot;第一部分，公开课笔记&quot;&gt;&lt;/a&gt;第一部分，公开课笔记&lt;/h1&gt;&lt;h3 id=&quot;———索引的本质&quot;&gt;&lt;a href=&quot;#———索引的本质&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用hexo框架搭建个人博客</title>
+    <link href="http://yoursite.com/2019/12/03/shi-yong-hexo-kuang-jia-da-jian-ge-ren-bo-ke/"/>
+    <id>http://yoursite.com/2019/12/03/shi-yong-hexo-kuang-jia-da-jian-ge-ren-bo-ke/</id>
+    <published>2019-12-03T14:42:27.000Z</published>
+    <updated>2020-04-27T12:13:36.487Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;&lt;p&gt;我不知将去何方，但我已经在路上。&lt;/p&gt;
+&lt;footer&gt;&lt;strong&gt;宫崎骏&lt;/strong&gt;&lt;cite&gt;《千与千寻》&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一、安装node-js&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>兄弟连linux笔记</title>
+    <link href="http://yoursite.com/2018/09/30/linux-xiong-di-lian-bi-ji/"/>
+    <id>http://yoursite.com/2018/09/30/linux-xiong-di-lian-bi-ji/</id>
+    <published>2018-09-30T09:25:30.000Z</published>
+    <updated>2020-04-27T12:13:55.828Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;一、各目录及命令的作用&quot;&gt;&lt;a href=&quot;#一、各目录及命令的作用&quot; class=&quot;headerlink&quot; title=&quot;一、各目录及命令的作用&quot;&gt;&lt;/a&gt;一、各目录及命令的作用&lt;/h3&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="兄弟连" scheme="http://yoursite.com/tags/%E5%85%84%E5%BC%9F%E8%BF%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mybaits学习笔记</title>
+    <link href="http://yoursite.com/2018/09/12/mybatis/"/>
+    <id>http://yoursite.com/2018/09/12/mybatis/</id>
+    <published>2018-09-12T09:25:30.000Z</published>
+    <updated>2020-05-06T02:24:32.339Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;mybatis的入门&quot;&gt;&lt;a href=&quot;#mybatis的入门&quot; class=&quot;headerlink&quot; title=&quot;mybatis的入门&quot;&gt;&lt;/a&gt;mybatis的入门&lt;/h1&gt;&lt;h3 id=&quot;mybatis的环境搭建&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="框架" scheme="http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="mybatis" scheme="http://yoursite.com/tags/mybatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>uml学习笔记</title>
+    <link href="http://yoursite.com/2018/09/05/uml-xue-xi/"/>
+    <id>http://yoursite.com/2018/09/05/uml-xue-xi/</id>
+    <published>2018-09-05T09:25:30.000Z</published>
+    <updated>2020-04-27T12:14:12.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;UML&lt;/p&gt;
+&lt;p&gt;1、OOAD(Object Oriented Analysis and Design),面向对象的分析与设计&lt;/p&gt;
+&lt;p&gt;2、UML(Unified Modeling Language),统一建模语言&lt;/p&gt;
+&lt;h5 id=&quot;静态建模&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件工程" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+      <category term="uml" scheme="http://yoursite.com/tags/uml/"/>
+    
+  </entry>
+  
+</feed>

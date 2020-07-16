@@ -1,0 +1,1524 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="数据库三级部分题型笔记, Yuan">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>数据库三级部分题型笔记 | Yuan</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Yuan" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Yuan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Yuan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/Dyuan98/" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/Dyuan98/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">数据库三级部分题型笔记</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    .toc-fixed .toc-link::before{
+        position: fixed!important;/*当toc的位置改为fixed时，.toc-link::before也要改为fixed*/
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/sql/">
+                                <span class="chip bg-color">sql</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                <span class="chip bg-color">数据库</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">习题笔记</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                数据库
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-03-11
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    9 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="第一部分：数据库创建"><a href="#第一部分：数据库创建" class="headerlink" title="第一部分：数据库创建"></a>第一部分：数据库创建</h3><h5 id="1-1-数据库的创建与维护"><a href="#1-1-数据库的创建与维护" class="headerlink" title="1.1:数据库的创建与维护"></a>1.1:数据库的创建与维护</h5><p>1.1创建一个名为StudentDB的数据库，该数据库包含相应的主数据文件、日志文件、和名为stuDB1和stuDB2的辅助数据文件；主数据文件和日志文件建立在：”D:\DATA“目录下，辅助数据文件建立在：”E:\DATA”目录下；数据文件初始大小为：3M,按1M无限制增长；日志文件按%10有限制增长，文件最大空间为1GB。</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">database</span> StudentDB
+<span class="token keyword">on</span> <span class="token keyword">primary</span>
+<span class="token punctuation">(</span>
+    name<span class="token operator">=</span><span class="token string">'StudentDB'</span><span class="token punctuation">,</span>
+    filename<span class="token operator">=</span><span class="token string">'D:\DATA\StudentDB.mdf'</span><span class="token punctuation">,</span>
+    size<span class="token operator">=</span>3mb<span class="token punctuation">,</span>
+    maxsize<span class="token operator">=</span>unlimited<span class="token punctuation">,</span>
+    filegrowth<span class="token operator">=</span>1mb
+<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span>
+    name<span class="token operator">=</span><span class="token string">'StuDB1'</span><span class="token punctuation">,</span>
+    filename<span class="token operator">=</span><span class="token string">'E:\DATA\StuDB1.ndf'</span><span class="token punctuation">,</span>
+    size<span class="token operator">=</span>3mb<span class="token punctuation">,</span>
+    maxsize<span class="token operator">=</span>unlimited<span class="token punctuation">,</span>
+    filegrowth<span class="token operator">=</span>1mb
+<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span>
+    name<span class="token operator">=</span><span class="token string">'StuDB2'</span><span class="token punctuation">,</span>
+    filename<span class="token operator">=</span><span class="token string">'E:\DATA\StuDB2.ndf'</span><span class="token punctuation">,</span>
+    size<span class="token operator">=</span>3mb<span class="token punctuation">,</span>
+    maxsize<span class="token operator">=</span>unlimited<span class="token punctuation">,</span>
+    filegrowth<span class="token operator">=</span>1mb
+<span class="token punctuation">)</span>
+log <span class="token keyword">on</span>
+<span class="token punctuation">(</span>
+    name<span class="token operator">=</span><span class="token string">'StudentDB_log'</span><span class="token punctuation">,</span>
+    filename<span class="token operator">=</span><span class="token string">'D:\DATA\StudentDB_log.ldf'</span><span class="token punctuation">,</span>
+    size<span class="token operator">=</span>1mb<span class="token punctuation">,</span>
+    maxsize<span class="token operator">=</span>1gb<span class="token punctuation">,</span>
+    filegrowth<span class="token operator">=</span><span class="token number">10</span><span class="token operator">%</span>
+<span class="token punctuation">)</span></code></pre>
+<h5 id="1-2-修改数据库"><a href="#1-2-修改数据库" class="headerlink" title="1.2:修改数据库"></a>1.2:修改数据库</h5><p>1.修改StudentDB数据库主数据文件的初始大小为5M;</p>
+<p>2.在StudentDB数据库中创建名为”GData”的文件组，为数据库添加辅助数据文件”StuDB3”,文件建立在”E:DATA”目录下，将该文件添加到”GData”文件组中。</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token number">1</span><span class="token punctuation">.</span>
+<span class="token keyword">alter</span> <span class="token keyword">database</span> StudentDB
+<span class="token keyword">modify</span> <span class="token keyword">file</span>
+<span class="token punctuation">(</span>
+name<span class="token operator">=</span>StudentDB<span class="token punctuation">,</span>
+size<span class="token operator">=</span>5mb
+<span class="token punctuation">)</span>
+<span class="token number">2</span><span class="token punctuation">.</span>
+<span class="token keyword">alter</span> <span class="token keyword">database</span> StudentDB 
+<span class="token keyword">add</span> filegroup GDate
+go
+<span class="token keyword">alter</span> <span class="token keyword">database</span> StudentDB
+<span class="token keyword">add</span> <span class="token keyword">file</span>
+<span class="token punctuation">(</span>
+name<span class="token operator">=</span><span class="token string">'stuDB3'</span><span class="token punctuation">,</span>
+filename<span class="token operator">=</span><span class="token string">'E:\DATA\stuDB3.ndf'</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">to</span> filegroup GDate </code></pre>
+<h5 id="1-3-删除StudentDB数据库"><a href="#1-3-删除StudentDB数据库" class="headerlink" title="1.3:删除StudentDB数据库"></a>1.3:删除StudentDB数据库</h5><pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true">--删除数据库的辅助文件StuDB3</span>
+<span class="token keyword">alter</span> <span class="token keyword">database</span> StudentDB
+remove <span class="token keyword">file</span> StuDB3
+
+<span class="token comment" spellcheck="true">--删除数据库</span>
+<span class="token keyword">drop</span> <span class="token keyword">database</span> StudentDB</code></pre>
+<h5 id="1-4-分离数据库"><a href="#1-4-分离数据库" class="headerlink" title="1.4:分离数据库"></a>1.4:分离数据库</h5><pre class=" language-sql"><code class="language-sql"><span class="token keyword">exec</span> sp_detach_db StudentDB</code></pre>
+<h5 id="1-5-附加数据库"><a href="#1-5-附加数据库" class="headerlink" title="1.5:附加数据库"></a>1.5:附加数据库</h5><pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">database</span> StudentDB
+<span class="token keyword">on</span> <span class="token keyword">primary</span>
+<span class="token punctuation">(</span>
+name<span class="token operator">=</span><span class="token string">'StudentDB'</span><span class="token punctuation">,</span>
+filename<span class="token operator">=</span><span class="token string">'C:\StudentDB.mdf'</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">for</span> attach</code></pre>
+<h5 id="1-6-创建与删除架构"><a href="#1-6-创建与删除架构" class="headerlink" title="1.6:创建与删除架构"></a>1.6:创建与删除架构</h5><pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">schema</span> 架构名
+<span class="token keyword">drop</span> <span class="token keyword">schema</span> 架构名</code></pre>
+<h3 id="第二部分-数据库表"><a href="#第二部分-数据库表" class="headerlink" title="第二部分.数据库表"></a>第二部分.数据库表</h3><h5 id="2-1：添加、修改与删除数据表中的某列"><a href="#2-1：添加、修改与删除数据表中的某列" class="headerlink" title="2.1：添加、修改与删除数据表中的某列"></a>2.1：添加、修改与删除数据表中的某列</h5><pre class=" language-sql"><code class="language-sql"><span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">add</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token punctuation">[</span>字段属性<span class="token punctuation">]</span>
+
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">alter</span> <span class="token keyword">column</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token punctuation">[</span>字段新属性<span class="token punctuation">]</span>
+
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">drop</span> <span class="token keyword">column</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span></code></pre>
+<h5 id="2-2：创建分区表"><a href="#2-2：创建分区表" class="headerlink" title="2.2：创建分区表"></a>2.2：创建分区表</h5><p>在StuDB中，依据表Student表的StudentYear列，来创建分区函数YearOrderPartFunc,</p>
+<p>边界值为2007和2009</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true">--首先创建分区函数</span>
+<span class="token keyword">create</span> <span class="token keyword">partition</span> <span class="token keyword">function</span> YearOrderPartFunc<span class="token punctuation">(</span><span class="token punctuation">[</span>字段类型<span class="token operator">/</span><span class="token keyword">int</span><span class="token operator">/</span><span class="token keyword">varchar</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">as</span> range <span class="token keyword">left</span> <span class="token keyword">for</span> <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token string">'2007'</span><span class="token punctuation">,</span><span class="token string">'2009'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">--然后创建分区方案</span>
+<span class="token keyword">create</span> <span class="token keyword">partition</span> scheme YearOrderPartScheme
+<span class="token keyword">as</span> <span class="token keyword">partition</span> YearOrderPartFunc
+<span class="token keyword">to</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">primary</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>文件组名<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>文件组名<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">--最后创建表</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token punctuation">(</span>字段……略
+StdYear <span class="token operator">in</span> <span class="token operator">not</span> <span class="token boolean">null</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">on</span> YearOrderPartScheme<span class="token punctuation">(</span>StdYear<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">--查看数据所在分区</span>
+<span class="token keyword">select</span> <span class="token operator">*</span><span class="token punctuation">,</span>$<span class="token keyword">partition</span><span class="token punctuation">.</span>YearOrderPartFunc<span class="token punctuation">(</span>StdYear<span class="token punctuation">)</span>
+<span class="token keyword">as</span> <span class="token string">'所属分区'</span>
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span></code></pre>
+<h5 id="2-3：表的约束"><a href="#2-3：表的约束" class="headerlink" title="2.3：表的约束"></a>2.3：表的约束</h5><pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true">-- 修改表的时候定义约束</span>
+<span class="token comment" spellcheck="true">-- 给某个字段增加默认值default</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">add</span> <span class="token keyword">constraint</span> <span class="token punctuation">[</span>约束名<span class="token punctuation">]</span> <span class="token keyword">default</span><span class="token punctuation">(</span><span class="token punctuation">[</span>约束条件<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">for</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 字段值取值唯一</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">add</span> <span class="token keyword">constraint</span> <span class="token punctuation">[</span>约束名<span class="token punctuation">]</span> <span class="token keyword">unique</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 检查约束</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">add</span> <span class="token keyword">constraint</span> <span class="token punctuation">[</span>约束名<span class="token punctuation">]</span> <span class="token keyword">check</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token operator">>=</span><span class="token number">12</span> <span class="token operator">and</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token operator">&lt;</span><span class="token number">67</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 主键约束</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">add</span> <span class="token keyword">constraint</span> <span class="token punctuation">[</span>约束名<span class="token punctuation">]</span> <span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 外键约束</span>
+<span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token punctuation">[</span>字段类型<span class="token punctuation">]</span> <span class="token keyword">foreign</span> <span class="token keyword">key</span> <span class="token keyword">references</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">[</span>外键字段名<span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// 建表时写法</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">add</span> <span class="token keyword">constraint</span> <span class="token punctuation">[</span>约束名<span class="token punctuation">]</span> <span class="token keyword">foreign</span> <span class="token keyword">key</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">references</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">[</span>外键字段名<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 删除约束</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">drop</span> <span class="token keyword">constraint</span> <span class="token punctuation">[</span>约束名<span class="token punctuation">]</span></code></pre>
+<h5 id="2-4：索引"><a href="#2-4：索引" class="headerlink" title="2.4：索引"></a>2.4：索引</h5><pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true">-- 聚集索引</span>
+<span class="token keyword">create</span> <span class="token keyword">clustered</span> <span class="token keyword">index</span> <span class="token punctuation">[</span>索引名<span class="token punctuation">]</span>
+<span class="token keyword">on</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">desc</span><span class="token operator">/</span><span class="token keyword">asc</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 重新生成索引</span>
+<span class="token keyword">alter</span> <span class="token keyword">index</span> <span class="token punctuation">[</span>索引名<span class="token punctuation">]</span>
+<span class="token keyword">on</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span> rebuild
+
+<span class="token comment" spellcheck="true">-- 删除索引</span>
+<span class="token keyword">drop</span> <span class="token keyword">index</span> <span class="token punctuation">[</span>索引名<span class="token punctuation">]</span>
+<span class="token keyword">on</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span></code></pre>
+<h5 id="2-5：查询"><a href="#2-5：查询" class="headerlink" title="2.5：查询"></a>2.5：查询</h5><pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true">-- 消除重复查询</span>
+<span class="token keyword">select</span> <span class="token keyword">distinct</span> <span class="token punctuation">[</span>要查询的字段名，不同字段名中间用逗号隔开<span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 查找前n条记录</span>
+<span class="token keyword">select</span> <span class="token keyword">top</span> n <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 查找前n%记录</span>
+<span class="token keyword">select</span> <span class="token keyword">top</span> n <span class="token keyword">percent</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 赋予记录中文别名</span>
+<span class="token keyword">select</span>  <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">as</span> <span class="token punctuation">[</span>自定义属性名<span class="token punctuation">]</span>
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- ‘+’号，若两个字段都为字符串类型作拼接操作，若为数字型字符串和int型字段则进行相加，都为int型进行相加；</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token operator">+</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 查询结果按条件排序</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">where</span> <span class="token punctuation">[</span>查询条件<span class="token punctuation">]</span>
+<span class="token keyword">order</span> <span class="token keyword">by</span> <span class="token punctuation">[</span>字段名<span class="token punctuation">]</span> <span class="token keyword">asc</span>  <span class="token comment" spellcheck="true">-- 不写默认为升序asc ，降序需写明为desc，可依据多个字段排序，如：order by [字段名1] asc, [字段名2] desc</span>
+
+<span class="token comment" spellcheck="true">-- 聚合函数</span>
+<span class="token comment" spellcheck="true">-- 统计该表记录总数</span>
+<span class="token keyword">select</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 统计总数、最大、最小以及平均值</span>
+<span class="token keyword">select</span> <span class="token function">SUM</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> 总数<span class="token punctuation">,</span>
+       <span class="token function">MAX</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> 最大值<span class="token punctuation">,</span>
+       <span class="token function">MIN</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> 最小值<span class="token punctuation">,</span>
+       <span class="token function">AVG</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> 平均值
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 按某个字段查询该字段不同记录个数</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名A<span class="token punctuation">]</span>，<span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名A<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> 数量
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">group</span> <span class="token keyword">by</span> <span class="token punctuation">[</span>字段名A<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 显示信息，并汇总指定字段总数</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span>，字段名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">compute</span> <span class="token function">count</span><span class="token punctuation">(</span>字段名<span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 显示信息，并按指定字段的分类汇总</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span>，字段名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token punctuation">]</span>
+<span class="token keyword">order</span> <span class="token keyword">by</span> <span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token keyword">compute</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">by</span> <span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 内连接查询(返回所有满足条件的记录)</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span> 
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">inner</span> <span class="token keyword">join</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token keyword">on</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span>
+<span class="token keyword">where</span> <span class="token punctuation">[</span>条件<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true">-- 第二种方式（别名方式）</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span> 
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span> <span class="token number">a</span>  <span class="token keyword">join</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token number">b</span>
+<span class="token keyword">on</span> <span class="token number">a</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">b</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span>
+<span class="token keyword">where</span> <span class="token punctuation">[</span>条件<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 左/右外连接（包括左/右表不满足条件的记录，也就是说不管条件如何都显示左/右表所有记录）</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span> 
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span> <span class="token number">a</span> <span class="token keyword">left</span><span class="token operator">/</span><span class="token keyword">right</span> <span class="token keyword">join</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token number">b</span>
+<span class="token keyword">on</span> <span class="token number">a</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">b</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span>
+<span class="token keyword">where</span> <span class="token punctuation">[</span>条件<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 完全外连接（不管条件如何，包括左表和右表所有的记录行）</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span> 
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span> <span class="token number">a</span> <span class="token keyword">full</span> <span class="token keyword">join</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token number">b</span>
+<span class="token keyword">on</span> <span class="token number">a</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">b</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span>
+<span class="token keyword">where</span> <span class="token punctuation">[</span>条件<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 三表连接</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span> <span class="token number">a</span> <span class="token keyword">full</span> <span class="token keyword">join</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token number">b</span>
+<span class="token keyword">on</span> <span class="token number">a</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">b</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span> <span class="token keyword">join</span> <span class="token punctuation">[</span>表名<span class="token number">3</span><span class="token punctuation">]</span> <span class="token number">c</span>
+<span class="token keyword">on</span> <span class="token number">b</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">c</span><span class="token punctuation">.</span><span class="token punctuation">[</span>共同字段名<span class="token punctuation">]</span>
+<span class="token keyword">where</span> <span class="token punctuation">[</span>条件<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 并运算查询，把两个查询的结果合并在一起，结果只会显示前面字段名</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span> 别名 <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">union</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 交运算，输出两个查询结果的交集</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span> 别名 <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">intersect</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">-- 差运算，输出两个查询结果的差集</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">1</span><span class="token punctuation">]</span> 别名 <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">except</span>
+<span class="token keyword">select</span> <span class="token punctuation">[</span>字段名<span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>表名<span class="token number">2</span><span class="token punctuation">]</span></code></pre>
+<h3 id="第三部分：SQL编程"><a href="#第三部分：SQL编程" class="headerlink" title="第三部分：SQL编程"></a>第三部分：SQL编程</h3><h5 id="3-1：存储过程"><a href="#3-1：存储过程" class="headerlink" title="3.1：存储过程"></a>3.1：存储过程</h5><p>3.1.1 查询StdInfoID为6的学生的姓名和已选课程门数，当选课门数在3门以上，输出”XX，已经完成了选课”，否则输出”XX，还需选课”。</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">declare</span> <span class="token variable">@sname</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token variable">@num</span> <span class="token keyword">int</span> <span class="token comment" spellcheck="true">/*声明变量*/</span>
+<span class="token keyword">select</span> <span class="token variable">@sname</span><span class="token operator">=</span>StdInfoName <span class="token keyword">from</span> StudentInfo
+<span class="token keyword">where</span> StdInfoID<span class="token operator">=</span><span class="token number">6</span>
+<span class="token keyword">set</span> <span class="token variable">@num</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">from</span> <span class="token punctuation">[</span>StudentInfo<span class="token punctuation">]</span>
+    <span class="token keyword">group</span>  <span class="token keyword">by</span> StdInfoID
+    <span class="token keyword">having</span> StdInfoID<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> <span class="token variable">@num</span><span class="token operator">>=</span><span class="token number">3</span>
+    <span class="token keyword">begin</span> 
+        <span class="token keyword">print</span> <span class="token variable">@sname</span><span class="token operator">+</span><span class="token string">',已经完成选课！'</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">else</span>
+    <span class="token keyword">print</span> <span class="token variable">@sname</span><span class="token operator">+</span><span class="token string">',选课门数不够！'</span>
+</code></pre>
+<p>3.1.2 简单CASE结构：查询StudentInfo表中学生的性别，若是女生显示”female”，否则显示”male”。</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> StdInfoName<span class="token punctuation">,</span> StdInfoSex<span class="token punctuation">,</span> 性别<span class="token operator">=</span><span class="token keyword">case</span>
+        <span class="token keyword">when</span> StdInfoSex<span class="token operator">=</span><span class="token string">'男'</span> <span class="token keyword">then</span> <span class="token string">'male'</span>
+        <span class="token keyword">when</span> StdInfoSex<span class="token operator">=</span><span class="token string">'女'</span> <span class="token keyword">then</span> <span class="token string">'female'</span>
+        <span class="token keyword">end</span>
+    <span class="token keyword">from</span> StudentInfo</code></pre>
+<p>3.1.3 循环结构，</p>
+<p>计算1-100内能被3整除的最大数。</p>
+<pre><code>declare @x int=100
+while(@x&gt;=1)
+    begin
+        if(@x%3=0)
+            break
+        set@x-=1
+    end
+print @x</code></pre><p>3.1.4 定义一个存储过程，用于查询StuSelDB数据库中所有教师的姓名、性别、学历、职称和所授课的课程名称。</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">procedure</span> ShowTeaCourse
+<span class="token keyword">as</span>
+<span class="token keyword">select</span> TheachInfoName<span class="token punctuation">,</span>TheachInfoSex<span class="token punctuation">,</span>TeachInfoKnowl<span class="token punctuation">,</span>TeachInfoTitle<span class="token punctuation">,</span>CourseInfoName
+<span class="token keyword">from</span> TeachInfo <span class="token number">a</span> <span class="token keyword">join</span> TeachCourse <span class="token number">b</span>
+<span class="token keyword">on</span> <span class="token number">a</span><span class="token punctuation">.</span>TeachInfoID <span class="token operator">=</span> <span class="token number">b</span><span class="token punctuation">.</span>TeachInfoID
+<span class="token keyword">join</span> CourseInfo <span class="token number">c</span>
+<span class="token keyword">on</span> <span class="token number">b</span><span class="token punctuation">.</span>CourseInfoID<span class="token operator">=</span><span class="token number">c</span><span class="token punctuation">.</span>CourseInfoID
+
+<span class="token comment" spellcheck="true">-- 执行存储过程</span>
+<span class="token keyword">execute</span> ShowTeaCourse 或
+<span class="token keyword">exec</span> ShowTeaCourse 或
+ShowTeaCourse
+
+<span class="token comment" spellcheck="true">-- 删除存储过程</span>
+<span class="token keyword">drop</span> <span class="token keyword">procedure</span> <span class="token punctuation">[</span>存储过程名<span class="token punctuation">]</span> 或
+<span class="token keyword">drop</span> <span class="token keyword">proc</span> <span class="token punctuation">[</span>存储过程名<span class="token punctuation">]</span></code></pre>
+<h5 id="3-2：DML触发器"><a href="#3-2：DML触发器" class="headerlink" title="3.2：DML触发器"></a>3.2：DML触发器</h5><p>3.2.1：创建INSERT触发器，如果向教师信息表TeachInfo中插入记录时，检查该记录的院系编号在院系信息表DepInfo中是否存在，如果不存在，则不允许插入</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true">-- inserted 逻辑表， 存放插入之后的记录</span>
+<span class="token keyword">create</span> <span class="token keyword">trigger</span> trig_insertTeachinfo
+<span class="token keyword">on</span> TeachInfo
+<span class="token keyword">after</span> <span class="token keyword">insert</span>
+<span class="token keyword">as</span>
+<span class="token keyword">begin</span> <span class="token keyword">insert</span>
+<span class="token keyword">if</span> <span class="token keyword">exists</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> inserted  <span class="token number">a</span>
+          <span class="token keyword">where</span> <span class="token number">a</span><span class="token punctuation">.</span>DepInfoID <span class="token operator">not</span> <span class="token operator">in</span><span class="token punctuation">(</span>
+          <span class="token keyword">select</span> DepInfoID <span class="token keyword">from</span> DepInfo<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">begin</span> 
+    <span class="token keyword">raiserror</span><span class="token punctuation">(</span><span class="token string">'数据一致性验证！'</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>         <span class="token comment" spellcheck="true">/* 报错 */</span>
+    <span class="token keyword">rollback</span> <span class="token keyword">transaction</span>                 <span class="token comment" spellcheck="true">/* 事务回滚 */</span>
+<span class="token keyword">end</span>
+<span class="token keyword">else</span>
+    <span class="token keyword">commit</span> <span class="token keyword">transaction</span>
+</code></pre>
+<p>3.2.2.创建UPDATE触发器，当班级信息表ClassInfo中的主键ClassInfoID进行修改时，必须对学生表中相应的ClassInfoID也进行修改</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">trigger</span> trig_updateClass
+<span class="token keyword">on</span> ClassInfo
+<span class="token keyword">after</span> <span class="token keyword">update</span>
+<span class="token keyword">if</span> <span class="token keyword">update</span><span class="token punctuation">(</span>ClassInfoID<span class="token punctuation">)</span>
+<span class="token keyword">begin</span> 
+    <span class="token keyword">update</span> StudentInfo
+    <span class="token keyword">set</span> ClassInfoID<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">select</span> ClassInfoID <span class="token keyword">from</span> inserted<span class="token punctuation">)</span>
+    <span class="token keyword">where</span> ClassInfoID<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">select</span> ClassInfoID <span class="token keyword">from</span> deleted<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+</code></pre>
+<p>3.2.3. 创建DELETE触发器，当删除学生信息表StudentInfo中已退学的学生资料时，自动删除学生选课表</p>
+<pre><code>create trigger trig_deleteStudent
+on StudentInfo
+after delete
+as
+begin
+    declare @stdInfoID int
+    select @stdInfoID=deleted.StdInfoID from deleted
+    delete StudentCourse
+    where StdInfoID = @stdInfoID
+end</code></pre><h5 id="3-3：用户定义函数与游标"><a href="#3-3：用户定义函数与游标" class="headerlink" title="3.3：用户定义函数与游标"></a>3.3：用户定义函数与游标</h5><p>3.3.1创建标量值函数FTitleSum，统计指定院系的教师人数</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">function</span> FTitleSum<span class="token punctuation">(</span><span class="token variable">@depName</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">returns</span> <span class="token keyword">int</span>
+<span class="token keyword">as</span>
+<span class="token keyword">begin</span>
+<span class="token keyword">end</span></code></pre>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yoursite.com" rel="external nofollow noreferrer">yuan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yoursite.com/2020/03/11/shu-ju-ku-san-ji-ti-xing/">http://yoursite.com/2020/03/11/shu-ju-ku-san-ji-ti-xing/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="http://yoursite.com" target="_blank">yuan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/sql/">
+                                    <span class="chip bg-color">sql</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                    <span class="chip bg-color">数据库</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%B9%A0%E9%A2%98%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">习题笔记</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/04/27/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/TheWorld/" class="post-category">
+                                    TheWorld
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hello-world/">
+                        <span class="chip bg-color">hello world</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/05/san-ji-shu-ju-ku-xi-ti-bi-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="三级数据库部分笔记">
+                        
+                        <span class="card-title">三级数据库部分笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            三级数据库习题笔记1.关系模型相关关系模型中的关系是一个二维表，表中的一行对应关系中的一个元组
+关系模型建立在集合论的基础上
+关系模式 描述关系的静态结构，它是静态、稳定的、
+关系 是动态、随用户对数据库的操作而变化的2.数据库系统设计的六
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sql/">
+                        <span class="chip bg-color">sql</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="http://yoursite.com" target="_blank">yuan</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "4";
+                    var startDate = "27";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Dyuan98/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2967753215@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2967753215" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2967753215" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "4cfe2a6c"
+        });
+        daovoice('update');
+    </script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
